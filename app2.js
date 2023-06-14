@@ -5,7 +5,7 @@
 // - la risorsa / si accede ad una pagina web dove ci sono
 //		- il messaggio "Tra due secondi caricherò il contenuto del file" 
 //		- uno script javascript che fa in modo che la pagina dopo 2 si riderezioni verso la risorsa "\1" del server appena avviato
-// - la risorsa "/1" riporta il contenuto del file
+// - la risorsa "/1" riporta il contenuto del file letto in precedenza
 // 
 
 const fs = require('fs');
