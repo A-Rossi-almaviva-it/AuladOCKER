@@ -1,5 +1,5 @@
 # Create image
-docker build . -t nodejsexpress
+docker build -t nodejsexpress .
 
 # Run image
 docker run -dp 8081:8081 --name nodejsexpress nodejsexpress

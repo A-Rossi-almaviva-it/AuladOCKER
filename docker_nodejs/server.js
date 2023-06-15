@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+const cors = require('cors');
 
 // Constants
 const PORT = 8081;
@@ -9,7 +10,7 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 
-app.use('/site', express.static('site'))
+app.use(cors()).use('/site', express.static('site'))
 
 app.get('/hello_world', (req, res) => {
   res.send('Hello World');
